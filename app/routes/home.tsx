@@ -1,3 +1,4 @@
+// @ts-ignore
 import type { Route } from "./+types/home";
 import Navbar from "~/components/Navbar";
 import {resumes} from "../../constants"
@@ -12,6 +13,7 @@ export function meta({}: Route.MetaArgs) {
     { name: "description", content: "Get feedback for your resume to get your dream job" },
   ];
 }
+
 
 export default function Home() {
 

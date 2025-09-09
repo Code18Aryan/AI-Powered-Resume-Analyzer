@@ -22,7 +22,6 @@ const Upload = () => {
     }
 
     const handleAnalyze = async ({ companyName, jobTitle, jobDescription, file }: { companyName: string, jobTitle: string, jobDescription: string, file: File  }) => {
-
         setIsProcessing(true);
 
         setStatusText('Uploading the file...');
@@ -65,11 +64,9 @@ const Upload = () => {
         setStatusText('Analysis complete, redirecting...');
         console.log(data);
         navigate(`/resume/${uuid}`);
-
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-
         e.preventDefault();
         const form = e.currentTarget.closest('form');
         if(!form) return;
